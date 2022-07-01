@@ -515,7 +515,7 @@ Template variables that do not have a value assigned will be cleared from the fi
 ```php
   use raelgc\view\Template;
   $tpl = new Template("hello.html");
-  $tpl->EXAMPLE = "Rael";
+  $tpl->EXAMPLE = "LaraCode";
   die("Value of Example: ".$tpl->EXAMPLE);
   $tpl->show();
 ```
@@ -560,7 +560,7 @@ And then, on the PHP side, let's check if the products exist. If so, we will sho
   use raelgc\view\Template;
   $tpl = new Template("hello.html");
   $numbers = 5;
-  if($quantidade > 0){
+  if($numbers > 0){
       $tpl->QUANTITY = $numbers;
       $tpl->block("BLOCK_NUMBERS");
   }
