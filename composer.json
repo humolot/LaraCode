@@ -1,0 +1,45 @@
+{
+  "name": "laracode/php",
+  "license": "MIT",
+  "type": "utilities",
+  "description": "Utilities for PHP 7.4^",
+  "authors": [
+    {
+      "name": "Gianck Luiz",
+      "email": "websoft4you@gmail.com"
+    }
+  ],
+  "require": {
+    "philo/laravel-blade": "3.*",
+    "illuminate/database": "*",
+    "illuminate/validation": "^5.6",
+    "illuminate/translation": "^5.6",
+    "illuminate/filesystem": "^5.6",
+    "ozdemir/datatables": "^2.3",
+    "yidas/codeigniter-model": "^2.19",
+    "ramsey/uuid": "^4.3",
+    "chriskacerguis/codeigniter-restserver": "^3.1",
+    "adhocore/jwt": "^1.1",
+    "sociallydev/spaces-api": "^3.5",
+    "pusher/pusher-php-server": "^7.0",
+    "spatie/image": "^2.2",
+    "jenssegers/imagehash": "^0.8.0",
+    "watson/rememberable": "*",
+    "phpoffice/phpspreadsheet": "^1.23",
+    "filp/whoops": "^2.14",
+    "phpmailer/phpmailer": "^6.6",
+    "nesbot/carbon": "^2.59",
+    "raelgc/template": "^2.2",
+    "stymiee/php-simple-encryption": "^1.0"
+  },
+  "autoload": {
+    "classmap": [
+      "application/models"
+    ]
+  },
+  "config": {
+    "allow-plugins": {
+      "kylekatarnls/update-helper": true
+    }
+  }
+}
