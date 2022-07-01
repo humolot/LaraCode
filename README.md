@@ -1,6 +1,5 @@
 # LaraCode
 
-Codeigniter simplicity with Laravel performance - Support PHP 7.4, 8.0, 8.1
 Tested in production despite some notifications everything works without problems.
 
 ## Installation
@@ -670,7 +669,7 @@ To do this, *escape* by including `{_}` inside the variable:
 <html>
   <body>
 
-    {{_}CONTEUDO}
+    {{_}CONTENT}
 
   </body>
 </html>
