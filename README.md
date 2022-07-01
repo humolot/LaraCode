@@ -1,5 +1,6 @@
 # LaraCode
 
+Codeigniter simplicity with Laravel performance - Support PHP 7.4, 8.0, 8.1
 Tested in production despite some notifications everything works without problems.
 
 ## Installation
