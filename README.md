@@ -216,6 +216,30 @@ Image::load($pathToImage)
 ```
 ## MongoDB
 # Methods
+* Need more then one database connection ??
+* `You can have more then one database in your application and you can use them simultaneously in your app just like Codeigniter Active Data Record.`
+
+1) Open application/config/mongo_db.php file and create one more database group inside that file. For example:
+```php
+$config['mongo_db']['newdb']['hostname'] = 'localhost';
+$config['mongo_db']['newdb']['port'] = '27017';
+$config['mongo_db']['newdb']['username'] = 'username';
+$config['mongo_db']['newdb']['password'] = 'password';
+$config['mongo_db']['newdb']['database'] = 'database';
+$config['mongo_db']['newdb']['db_debug'] = TRUE;
+$config['mongo_db']['newdb']['write_concerns'] = (int)1;
+$config['mongo_db']['newdb']['journal'] = TRUE;
+$config['mongo_db']['newdb']['read_preference'] = NULL;
+$config['mongo_db']['newdb']['read_preference_tags'] = NULL;
+```
+* `You can change group name from "newdb" to anything else you want. After changing the group name, save the file.`
+
+2) Now open your controller or model file, where you need another database connection active and write below code in the constructor of the class.
+```php
+$this->load->library('mongo_db', array('activate'=>'newdb'),'mongo_db2');
+```
+* `This will make new connection on new mongoDB and make it available to use as $this->mongo_db2-> inside class`
+
 
 ## Insert Method
 * `insert` Insert a new document into a collection
