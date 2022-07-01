@@ -34,7 +34,7 @@
   },
   "autoload": {
     "classmap": [
-      "application/models"
+      "app/models"
     ]
   },
   "config": {
